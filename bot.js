@@ -6,8 +6,6 @@ client.on('ready', () => {
 
 });
 
-
-
 client.on("message", message => {
     var prefix = ">";
  if (message.content === ">help") {
@@ -81,14 +79,6 @@ client.on('message', message => {
 });
 
 
-client.on("message", message => {
-    var prefix = ">";
- if (message.content === ">users") {
-  const embed = new Discord.RichEmbed()  
-      .setColor("#000000") 
-      .setDescription(`
-${client.users.size} Users!
-`
 
 
 	client.on('message', message => {
