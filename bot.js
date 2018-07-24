@@ -18,7 +18,6 @@ Please Choose:
              
 ${prefix}ban ⇏  خاصية الباند
 ${prefix}bc ⇏ خاصية البرودكاست
-             
 ${prefix}kick ⇏ خاصية الطرد
 ${prefix}clear ⇏  خاصية مسح الشات
 ${prefix}bans ⇏  لمعرفة عدد المبندين في سيرفر
@@ -26,13 +25,11 @@ ${prefix}mute ⇏ لاعطاء شخص ميوت
 ${prefix}ping ⇏ لمعرفة بنق البوت
 ${prefix}bot ⇏ لمعرفة معلومات البوت
 ${prefix}info ⇏ لمعرفة معلومات البوت
- 
 ${prefix}server ⇏ لمعرفة معلومات السيرفر
 ${prefix}roles ⇏ لعرض كل رتب السيرفر
 ${prefix}users ⇏ Bot users number
 ${prefix}inv ⇏ لدعوة البوت لسيرفرك
 ${prefix}cc ⇏ لصنع الوان
- 
 ${prefix}لو خيروك ⇏ game لو خيروك 
 ${prefix}قوانين ⇏ rules قوانين
 ${prefix}id ⇏ لمعرفة ايدي حقك
