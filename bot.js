@@ -369,13 +369,6 @@ client.on('message', msg => {
 }
 })
 
-client.on('message', message => {
-    var args = message.content.split(/[ ]+/)
-    if(message.content.includes('.com', '.net', '.tk')){
-        message.delete()
-    return message.reply(`**حبي ممنوع نشر اي روابط:joy: **`)
-    }
-});
 
 client.on('message', (message)=>{
         if (message.content.startsWith(`>embed`)) {
