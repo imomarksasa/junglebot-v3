@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
  const prefix = ">";
-client.on('ready', function(){    
+client.on('im online lol hi wow ready', function(){    
     var ms = 40000 ;    
-    var setGame = [`>help | Users: ${client.users.size} , >inv | By Jungle TeaM`];    
+    var setGame = [`>help | >inv | Users: ${client.users.size}`];    
     var i = -1;    
     var j = 0;    
     setInterval(function (){    
