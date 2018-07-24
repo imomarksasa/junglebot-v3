@@ -1,22 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
  const prefix = ">";
-client.on('im online lol hi wow ready', function(){    
-    var ms = 40000 ;    
-    var setGame = [`>help | >inv | Users: ${client.users.size}`];    
-    var i = -1;    
-    var j = 0;    
-    setInterval(function (){    
-        if( i == -1 ){    
-j = 1;    
-       }    
-        if( i == (setGame.length)-1 ){    
-            j = -1;    
-      }    
-       i = i+j;    
-        client.user.setGame(setGame[i],`https://www.twitch.tv/S-F`);    
-}, ms);    
-    
+client.on('ready', () => {
+      client.user.setActivity(`>help | >inv + ${client.users.size} Users!`, { type: 'WATCHING' })
+
 });
 
 client.on("message", message => {
