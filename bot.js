@@ -3,7 +3,7 @@ const client = new Discord.Client();
  const prefix = ">";
 client.on('ready', function(){    
     var ms = 40000 ;    
-    var setGame = ['>help | Users: `${client.users.size}`' , '>inv | By Jungle TeaM'];    
+    var setGame = [`>help | Users: ${client.users.size} , >inv | By Jungle TeaM`];    
     var i = -1;    
     var j = 0;    
     setInterval(function (){    
