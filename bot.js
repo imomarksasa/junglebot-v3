@@ -360,15 +360,6 @@ client.on('message', function(message) {
     }
 });
 
-client.on('message', msg => {
-  const DiscordLink = [".net", ".tk", ".com"];
-  if( DiscordLink.some(word => msg.content.includes(word)) ) {
-    msg.reply(`**حبي ممنوع نشر اي روابط:joy: **`)
-    msg.delete();
-
-}
-})
-
 
 client.on('message', (message)=>{
         if (message.content.startsWith(`>embed`)) {
@@ -564,7 +555,7 @@ client.on("message", message => { // Leaked by [ @M3a4x ]
 });
 
  client.on('guildCreate', guild => {
-  client.channels.get("room id new ").send(`**تم اضافة البوت في سيرفر جديد مبروكك
+  client.channels.get("471436304090005505").send(`**تم اضافة البوت في سيرفر جديد مبروكك
 اسم السيرفر: __${guild.name}__
 اونر السيرفر: __${guild.owner}__**`)
 }); 
