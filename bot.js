@@ -60,7 +60,16 @@ ${prefix}giveaway ⇏ to create a giveaway
    }
    }); 
 
-
+  client.on('message', message => {
+    if(message.content == '>bans'){
+        message.guild.fetchBans().then(bans => {
+            bans.forEach(user => {
+               message.channel.send('\`#\` <@'+ user.id + '>');
+            });
+        });
+    }
+});
+  
    
    
    client.on('message', message => {
