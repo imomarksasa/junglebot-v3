@@ -100,6 +100,26 @@ var secreT = [
 });
 
 
+setInterval(function(){
+client.channels.find('id', '471827866393378827').setName("W");
+client.channels.find('id', '471827866393378827').setName("We");
+client.channels.find('id', '471827866393378827').setName("Wel");
+client.channels.find('id', '471827866393378827').setName("Welc");
+client.channels.find('id', '471827866393378827').setName("Welco");
+client.channels.find('id', '471827866393378827').setName("Welcom");
+client.channels.find('id', '471827866393378827').setName("Welcome");
+client.channels.find('id', '471827866393378827').setName("Welcome T");
+client.channels.find('id', '471827866393378827').setName("Welcome To");
+client.channels.find('id', '471827866393378827').setName("Welcome To J");
+client.channels.find('id', '471827866393378827').setName("Welcome To Ju");
+client.channels.find('id', '471827866393378827').setName("Welcome To Jun");
+client.channels.find('id', '471827866393378827').setName("Welcome To Jung");
+client.channels.find('id', '471827866393378827').setName("Welcome To Jungl");
+client.channels.find('id', '471827866393378827').setName("Welcome To Jungle");
+  }, 3000);
+});
+
+
 var Sra7a = [
   'صراحه  |  صوتك حلوة؟',
   'صراحه  |  التقيت الناس مع وجوهين؟',
