@@ -101,21 +101,21 @@ var secreT = [
 
 
 setInterval(function(){
-client.channels.find('id', '471827866393378827').setName("W");
-client.channels.find('id', '471827866393378827').setName("We");
-client.channels.find('id', '471827866393378827').setName("Wel");
-client.channels.find('id', '471827866393378827').setName("Welc");
-client.channels.find('id', '471827866393378827').setName("Welco");
-client.channels.find('id', '471827866393378827').setName("Welcom");
-client.channels.find('id', '471827866393378827').setName("Welcome");
-client.channels.find('id', '471827866393378827').setName("Welcome T");
-client.channels.find('id', '471827866393378827').setName("Welcome To");
-client.channels.find('id', '471827866393378827').setName("Welcome To J");
-client.channels.find('id', '471827866393378827').setName("Welcome To Ju");
-client.channels.find('id', '471827866393378827').setName("Welcome To Jun");
-client.channels.find('id', '471827866393378827').setName("Welcome To Jung");
-client.channels.find('id', '471827866393378827').setName("Welcome To Jungl");
-client.channels.find('id', '471827866393378827').setName("Welcome To Jungle");
+client.channels.find('id', '472718413689520129').setName("W");
+client.channels.find('id', '472718413689520129').setName("We");
+client.channels.find('id', '472718413689520129').setName("Wel");
+client.channels.find('id', '472718413689520129').setName("Welc");
+client.channels.find('id', '472718413689520129').setName("Welco");
+client.channels.find('id', '472718413689520129').setName("Welcom");
+client.channels.find('id', '472718413689520129').setName("Welcome");
+client.channels.find('id', '472718413689520129').setName("Welcome T");
+client.channels.find('id', '472718413689520129').setName("Welcome To");
+client.channels.find('id', '472718413689520129').setName("Welcome To J");
+client.channels.find('id', '472718413689520129').setName("Welcome To Ju");
+client.channels.find('id', '472718413689520129').setName("Welcome To Jun");
+client.channels.find('id', '472718413689520129').setName("Welcome To Jung");
+client.channels.find('id', '472718413689520129').setName("Welcome To Jungl");
+client.channels.find('id', '472718413689520129').setName("Welcome To Jungle");
   }, 3000);
 });
 
