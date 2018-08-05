@@ -92,7 +92,7 @@ var secreT = [
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
- .addField('Down' ,
+ .addField('Jungle' ,
   `${secreT[Math.floor(Math.random() * secreT.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[id] Send By: ' + message.author.username)
@@ -628,7 +628,7 @@ client.on('message', message => {
 	
 	
 client.on("message", message => { // Leaked by [ @M3a4x ]
-if (message.content === ">system-sar7") {
+if (message.content === ">sar7") {
 message.channel.send(`**الامر :  $sar7\n خاصيه صارح\nالطريقه كـ التالي :\nتروح البوت خاص : http://prntscr.com/k4kpsb \n مثال : بصارح نفسي للتجربة : http://prntscr.com/k4kq59 \n وتضغط صح
 بيصير كذا :http://prntscr.com/k4kqna \n وبس كذا اشتغل الامر ميه ميه :thumbsup: ** `)
 }
