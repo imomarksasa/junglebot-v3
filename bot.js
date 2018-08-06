@@ -56,7 +56,9 @@ ${prefix}sug ⇏ to add suggest !
 ${prefix}giveaway ⇏ to create a giveaway
 ${prefix} خواطر ⇏ game خواطر
 ${prefix}صراحه ⇏ game صراحه
-      `)
+***Note*** : Bot In Developing.
+
+`)
    message.channel.sendEmbed(embed)
     
    }
