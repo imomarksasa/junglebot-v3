@@ -329,7 +329,7 @@ client.on('message', message => { // Leaked by [ @M3a4x ]
         .setDescription(`مع السلامه تشرفنا بك :raised_hand::skin-tone-1: :pensive: `)
         .addField(':bust_in_silhouette:   تبقي',`**[ ${member.guild.memberCount} ]**`,true)
         .setColor('RED')
-        .setFooter(`====ولكم منور السيرفر اتمنا لك الاستمتاع====`, 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
+        .setFooter(`====اتمنا لك الاستمتاع====`, 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
     
     var channel =member.guild.channels.find('name', 'welcome')
     if (!channel) return;
