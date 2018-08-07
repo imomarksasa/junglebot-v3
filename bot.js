@@ -169,7 +169,7 @@ var Sra7a = [
 client.on("ready", () => {
 let channel =     client.channels.get("470543998046699521")
 setInterval(function() {
-channel.send(`**Share The Server Guys <3.** @everyone`);
+channel.send(`**Share The Server Guys <3.** `);
 }, 720000)
 })
 
