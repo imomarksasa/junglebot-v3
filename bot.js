@@ -166,12 +166,6 @@ var Sra7a = [
   'صراحه  |  ما هي أمنياتك المُستقبلية؟‏',
 ];
 
-client.on("ready", () => {
-let channel =     client.channels.get("470543998046699521")
-setInterval(function() {
-channel.send(`**Share The Server Guys <3.** `);
-}, 720000)
-})
 
 client.on('message', message => {
 if (message.content.startsWith('>صراحه')) {
