@@ -107,7 +107,7 @@ client.on('message',message =>{
   var embed = new Discord.RichEmbed()
   .setColor("#000000")
   .setDescription(`${invites.join(`\n`)+'\n\n**By:** '+message.author}`)
-  .setThumbnail("https://i.imgur.com/OM00xyh.png")
+  .setThumbnail("https://cdn.discordapp.com/attachments/473888377863667714/479604123327660042/junglemc.ico")
            message.channel.send({ embed: embed });
    
   });
