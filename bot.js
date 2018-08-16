@@ -145,7 +145,6 @@ if(cmd === `${prefix}sug`) {
     .setFooter(`Suggested By : ${message.author.tag}`);
     message.delete().catch(O_o=>{}) 
     let suggests = message.guild.channels.find(`name`, "suggests");
-    if (>suggests) return message.channel.send("***suggests*** لازم تسوي تشانل اسمه")
     suggests.send(suggestEMBED);
 }
 
