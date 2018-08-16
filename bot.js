@@ -41,6 +41,7 @@ ${prefix}info ⇏ لمعرفة معلومات البوت
 ${prefix}server ⇏ لمعرفة معلومات السيرفر
 ${prefix}roles ⇏ لعرض كل رتب السيرفر
 ${prefix}users ⇏ Bot users number
+>top ⇏ invites لمعرفة معلومات 
 ${prefix}inv ⇏ لدعوة البوت لسيرفرك
 ${prefix}cc ⇏ لصنع الوان
 ${prefix}لو خيروك ⇏ game لو خيروك 
