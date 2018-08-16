@@ -130,6 +130,26 @@ client.on('message',message =>{
     }
 });
 
+client.on('message', message =>{
+    let messageArray = message.content.split(" ");
+    let cmd = messageArray[0];
+    let args = messageArray.slice(1);
+    let prefix = '>;
+
+if(cmd === `${prefix}sug`) {
+    var suggestMessage = message.content.substring(8)
+    let suggestEMBED = new Discord.RichEmbed()
+    .setColor(3447003)
+    .setTitle("New suggest just added!!")
+    .setDescription(`**${suggestMessage}**`)
+    .setFooter(`Suggested By : ${message.author.tag}`);
+    message.delete().catch(O_o=>{}) 
+    let suggests = message.guild.channels.find(`name`, "suggests");
+    if (>suggests) return message.channel.send("***suggests*** لازم تسوي تشانل اسمه")
+    suggests.send(suggestEMBED);
+}
+
+});
 
 client.on('message', message => {
     var args = message.content.split(/[ ]+/)
