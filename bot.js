@@ -200,20 +200,6 @@ if(cmd === `${prefix}sug`) {
 
 });
 
-client.on('message', message => {
-    var args = message.content.split(/[ ]+/)
-    if(message.content.includes('hi')){
-        message.delete()
-      message.channel.sendMessage("", {embed: {
-        title: "لHello",
-        color: 0x06DF00,
-        description: "Hi Man :heart:",
-        footer: {
-          text: "Jungle-Bot
-                          }
-
-     
-}); 
 
 client.on('message', message => {
      if(message.content.startsWith(prefix + "clear")) {
