@@ -134,7 +134,7 @@ client.on('message', message =>{
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
-    let prefix = '>;
+    let prefix = '>';
 
 if(cmd === `${prefix}sug`) {
     var suggestMessage = message.content.substring(8)
