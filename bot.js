@@ -102,6 +102,33 @@ var secreT = [
 });
 
 
+client.on('message', message => {
+     if(message.content.startsWith(prefix + "clear")) {
+         var args = message.content.split(" ").slice(1);
+ if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('You need MANAGE_MESSAGES permission noob');
+  if (!args[0]) return message.channel.send('You didn\'t provide any number!!!');
+
+  message.channel.bulkDelete(args[0]).then(() => {
+    const embed = new Discord.RichEmbed()
+      .setColor(0xF16104)
+      .setDescription(`Cleared ${args[0]} messages.`);
+    message.channel.send({ embed });
+
+    const actionlog = message.guild.channels.find('name', 'log');
+
+    if (!actionlog) return message.channel.send('Can\'t find action-log channel. Are you sure that this channel exists and I have permission to view it? **CANNOT POST LOG.**');
+    const embedlog = new Discord.RichEmbed()
+      .setDescription('~Purge~')
+      .setColor(0xF16104)
+      .addField('Purged By', `<@${message.author.id}> with ID ${message.author.id}`)
+      .addField('Purged in', message.channel)
+      .addField('Time', message.createdAt);
+    actionlog.send(embedlog);
+   
+  });
+};
+
+});
 
 
 var Sra7a = [
@@ -405,39 +432,6 @@ let welcomer = member.guild.channels.find("name","welcome");
       }
       });
 
-client.on('message', message =>{
-    if(message.author.bot) return;
-    if(!message.content == ('>clear'))
-if(!true) return;
-    if(message.content.split(' ')[0] == ('>clear')){
-    var lmt = message.content.split(' ')[1]
-    ,  hang = 0
-    ,  max  = 0;
-    
-    if(!lmt) lmt = 200;
-    if(typeof lmt !== 'number') return;
-    if(lmt > 100){
-        for(;lmt > 100;){
-        lmt--;
-        hang++;
-        }
-        }
-     message.channel.fetchMessages({limite:lmt}).then(msgs=>{
-     msgs.channel.bulkDelete(msgs);
-     });
-     if(hang > 100){
-         hang = 100;
-     }
-        message.channel.fetchMessages({limite:hang}).then(msgs=>{
-        message.channel.bulkDelete(msgs);
-     });
-     
-    max= hang+lmt;
-    message.reply(` **Done, i have delete ${max} messages!**.`).catch(()=>{
-        message.reply(` **Sorry, i can only bulk delete messages that are under 14 days old**.`)
-    });
-    }
-});
 
 
 client.on('message', function(message) {
