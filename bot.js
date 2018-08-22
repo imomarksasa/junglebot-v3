@@ -319,7 +319,7 @@ message.react("??")
 .addField(' الاعضاء👥 ',` [${client.users.size}] `)
 .addField('الرومات📚 ',`[${client.channels.size}]`) 
 .addField(' البنق🚀 ',`[${Date.now() - message.createdTimestamp}]`) 
-.addField('مصمم  + صاحب البوت ',`! 1NoNo ☬ ᶜˡᵒᵘᵈ .#1010`)
+.addField('مصمم  + صاحب البوت ',`! 1 NoNo`)
 .setColor('#7d2dbe')
   message.channel.sendEmbed(embed);
     }
@@ -694,7 +694,7 @@ client.on('message', message => {
           //غير اسم الروم او سوي روم بذا الاسم 
           if (msg.guild.channels.find('name', 'warns')) {
             //اذا غيرت فوق غير هنا كمان 
-            msg.guild.channels.find('name', 'warns').send(`
+            msg.guild.channels.find('name', 'log').send(`
           تم اعطائك تنبيه : ${msg.mentions.members.first()}
           لأنك قمت بما يلي
           ${args.join(" ").split(msg.mentions.members.first()).slice(' ')}
@@ -1026,7 +1026,7 @@ client.on('message', message => {
   if(!message.guild.member(client.user).hasPermission("BAN_MEMBERS")) return message.reply("**I Don't Have ` BAN_MEMBERS ` Permission**");
   let user = message.mentions.users.first();
   let reason = message.content.split(" ").slice(2).join(" ");
-  let b5bzlog = client.channels.find("name", "log");
+  /*let b5bzlog = client.channels.find("name", "log");
   if(!b5bzlog) return message.reply("I've detected that this server doesn't have a 5bz-log text channel.");*/
   if (message.mentions.users.size < 1) return message.reply("**منشن شخص**");
   if(!reason) return message.reply ("**اكتب سبب الطرد**");
