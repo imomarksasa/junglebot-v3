@@ -26,7 +26,7 @@ client.on("message", message => {
       .setColor("#000000") 
       .setDescription(`
       
-                    Jungle-Bot Commands
+                    Snow-Bot Commands
 Please Choose:
              
 ${prefix}ban ⇏  خاصية الباند
@@ -173,7 +173,7 @@ client.on('message',message =>{
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
- .addField('Jungle' ,
+ .addField('Snow' ,
   `${secreT[Math.floor(Math.random() * secreT.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[id] Send By: ' + message.author.username)
@@ -319,7 +319,7 @@ message.react("??")
 .addField(' الاعضاء👥 ',` [${client.users.size}] `)
 .addField('الرومات📚 ',`[${client.channels.size}]`) 
 .addField(' البنق🚀 ',`[${Date.now() - message.createdTimestamp}]`) 
-.addField('مصمم  + صاحب البوت ',`PrinceCrafter`)
+.addField('مصمم  + صاحب البوت ',`! 1NoNo ☬ ᶜˡᵒᵘᵈ .#1010`)
 .setColor('#7d2dbe')
   message.channel.sendEmbed(embed);
     }
@@ -366,7 +366,7 @@ m.sendMessage(args)
                     });
 					
 client.on('message', msg => {
-     if(msg.content === 'NoNo') {
+     if(msg.content === 'NoN') {
          msg.guild.members.forEach(g => {
                 g.setNickname(' Jungle Member')
         })
@@ -904,7 +904,7 @@ client.on('message', message => {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "Jungle Bot";
+    let copy = "Snow Bot";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
@@ -1026,7 +1026,7 @@ client.on('message', message => {
   if(!message.guild.member(client.user).hasPermission("BAN_MEMBERS")) return message.reply("**I Don't Have ` BAN_MEMBERS ` Permission**");
   let user = message.mentions.users.first();
   let reason = message.content.split(" ").slice(2).join(" ");
-  /*let b5bzlog = client.channels.find("name", "5bz-log");
+  let b5bzlog = client.channels.find("name", "log");
   if(!b5bzlog) return message.reply("I've detected that this server doesn't have a 5bz-log text channel.");*/
   if (message.mentions.users.size < 1) return message.reply("**منشن شخص**");
   if(!reason) return message.reply ("**اكتب سبب الطرد**");
