@@ -4,7 +4,7 @@ const fs = require('fs');
 const moment = require('moment');
 const jimp = require('jimp');
 const Canvas = require('canvas');
- const prefix = "+";
+ const prefix = "-";
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -18,7 +18,6 @@ client.on('message', message => {
 
 
 client.on('message' , async (message) => {
-var prefix = "-"
     if(message.content.startsWith(prefix + "minv")) {
 if(message.author.bot) return;
 if(!message.channel.guild) return message.reply(' Error : \` Guild Command \`');
