@@ -42,7 +42,7 @@ message.member.addRole(message.member.guild.roles.find("name","Inviter II"))
 console.log('`Error`: ' + RebeL);
 });
 }
-!if (i.uses === 20) {
+if (i.uses === 20) {
 message.member.addRole(message.member.guild.roles.find("name","Inviter III"))
 .catch(RebeL =>{
 console.log('`Error`: ' + RebeL);
