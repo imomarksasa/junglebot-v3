@@ -7,6 +7,10 @@ client.on('guildMemberAdd', member=> {
     member.addRole(member.guild.roles.find("name","Founder OF MTA"));
     });
 
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","|"));
+    });
+
 
 client.on('message',async message => {
   if(message.content === `${prefix}banall`) {
