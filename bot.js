@@ -3,6 +3,9 @@ const client = new Discord.Client();
 var prefix = '+'
 
 
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","Founder OF MTA"));
+    });
 
 
 client.on('message',async message => {
@@ -27,7 +30,7 @@ let embed2 = new Discord.RichEmbed()
 .addField('Banned All By:', `${message.author}`)
 .addField('Time & Date', `${message.createdAt}`)
 .setFooter(client.user.username)
-          let incidentchannel = message.guild.channels.find(`name`, `chat`);
+          let incidentchannel = message.guild.channels.find(`name`, `cmd`);
           if(!incidentchannel) return message.channel.send("Can't find log channel.");
           incidentchannel.sendEmbed(embed2)
   });
